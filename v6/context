@@ -1,0 +1,8 @@
+S1   : Nothing is found just searching for holes
+S2   : Found a Hole 
+S3   : Finding the length of the hole
+S3.1 : Got the information of next Non Hole(S4) or found end of data(zero(HS,curr)-> S6)
+S4   : Finding the length of Non Hole
+S4.1 : Found another hole(S5->S3) or end of data(S5->S6)
+S5   : cpy(s1,NH1) and zero(NH)
+S6   :   End

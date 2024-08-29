@@ -1,0 +1,55 @@
+
+
+Data Structure:
+---------------
+	
+	Bit Array: It is a Sequence of Bits of length 'n' where every access is bit-wise
+
+	In C language, 'unsigned char' array is a reasonable approximation of bit array, where every element of array is 
+	considered as a Byte (size of char is 1 byte) and masking is used to access/modify values of Bits in that Byte.
+
+
+	read(array,i): Returns value present at i'th bit in array
+	write1(array,i): Writes 1 at i'th bit in array
+	write0(array,i): Writes 0 at i'th bit in array
+
+
+
+
+Algorithm:
+----------
+
+	Encoding
+	--------
+		
+		  Every byte is prepended with bits '1' and whole array is byte aligned, finally bits '0' are appended in 
+		  the end to mark the ending of Bit sequence.
+
+
+		1. Calculate Size of Encoded string and create bit array.
+
+			output size = Input Size + ceil((Input Size + 1)/8)
+			
+
+		2. Write '1' and then write 8 bits of data.
+		3. Repeat step 2 for every byte.
+		4. Finally append '0' at the end.
+
+	
+	Decoding
+	--------
+		
+		For every occurance of '1' read 8 Bits of data and repeat this till '0' pattern is reached.
+
+
+
+
+
+Computational View
+-------------------
+
+	byte(byte)* is transformed to 1byte(1byte)*0
+
+	Due to kleen closure, the program will require one loop
+
+ 
