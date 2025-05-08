@@ -97,4 +97,4 @@ For any inquiries or discussions, reach out via GitHub Issues.
 
 ---
 
-Developed by Low-Level-Tiwari.
+Developed by Piyush Tiwari and Meghansh Tyagi.
